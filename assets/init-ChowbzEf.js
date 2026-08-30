@@ -1,0 +1,1 @@
+import e from"./init-E11Cz-Vi.js";import{c as o,l as r,j as s,k as a}from"./index-CrE7RJmu.js";const n={class:"markdown-body"},d={__name:"init",setup(c,{expose:t}){return t({frontmatter:{}}),(_,i)=>(o(),r("div",n,[s(a(e),{system:"admin"})]))}};export{d as default};

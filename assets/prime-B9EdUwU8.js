@@ -1,0 +1,1 @@
+import{c as o,l as n,g as e}from"./index-CrE7RJmu.js";const s={class:"markdown-body"},l={__name:"prime",setup(a,{expose:r}){return r({frontmatter:{}}),(m,t)=>(o(),n("div",s,[...t[0]||(t[0]=[e("h1",{id:"tuiprime",tabindex:"-1"},"TuiPrime",-1),e("p",null,"该目录来自旧版VIP文档的专属资源分组。",-1),e("p",null,"权限适配完成前，本页不展示受保护正文。",-1)])]))}};export{l as default};

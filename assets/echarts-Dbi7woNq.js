@@ -1,0 +1,1 @@
+import{c as s,l as a,g as t}from"./index-CrE7RJmu.js";const o={class:"markdown-body"},d={__name:"echarts",setup(n,{expose:r}){return r({frontmatter:{}}),(l,e)=>(s(),a("div",o,[...e[0]||(e[0]=[t("h1",{id:"echarts",tabindex:"-1"},"Echarts",-1),t("p",null,"该目录来自旧版VIP文档的专属资源分组。",-1),t("p",null,"权限适配完成前，本页不展示受保护正文。",-1)])]))}};export{d as default};
