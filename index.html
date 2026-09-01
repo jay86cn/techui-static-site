@@ -4,11 +4,40 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../../static/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="tencent-rum-id" content="zY6J3tza1YdvzOmm19" />
     <title>TechUI-Prime</title>
     <style>
       #preLoading { position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 20; background-color: #000; }
       #preLoading .desc { position: absolute; top: 50%; left:0; right:0; transform: translateY(-50%); color: var(--font-strongest); font-size: 28px;  text-align: center; }
     </style>
+    <script src="https://tam.cdn-go.cn/aegis-sdk/latest/aegis.min.js?max_age=3600"></script>
+    <script>
+      (() => {
+        const id = document.querySelector('meta[name="tencent-rum-id"]')?.content.trim()
+        if (!id || !window.Aegis) return
+
+        window.techuiAegis = new window.Aegis({
+          id,
+          hostUrl: 'https://rumt-zh.com',
+          spa: true,
+          reportApiSpeed: false,
+          reportAssetSpeed: false,
+          pagePerformance: false,
+          webVitals: false,
+          blankScreen: false,
+          consoleLog: false,
+          clickElementLog: false,
+          pageLoadLog: false,
+          slowPageLoadLog: false,
+          assetLog: false,
+          slowAssetLog: false,
+          onError: false,
+          beforeRequest(data) {
+            return data.logType === 'pv' ? data : false
+          },
+        })
+      })()
+    </script>
     <script type="module" crossorigin src="/assets/index-varN9D8P.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/rolldown-runtime-hePW80VL.js">
     <link rel="modulepreload" crossorigin href="/assets/runtime-core.esm-bundler-CXb3iQhv.js">
