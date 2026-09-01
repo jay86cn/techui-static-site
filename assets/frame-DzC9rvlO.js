@@ -1,1 +1,0 @@
-import r from"./index-7YLlCi0H.js";import{e as o,c as e}from"./index-CrE7RJmu.js";import"./image-assets-CqKx6h-7.js";import"./planning-elements-modules-DRkHv89Y.js";import"./standardEditorFixture-BvNxNK8W.js";import"./iso8Acceptance-BDNqbJuG.js";import"./Controls-D47YLxXG.js";const l={__name:"frame",setup(t){return(m,p)=>(e(),o(r,{"frame-preview":""}))}};export{l as default};

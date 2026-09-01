@@ -1,0 +1,1 @@
+import{V as e,p as t,u as n}from"./runtime-core.esm-bundler-CXb3iQhv.js";var r={class:`markdown-body`},i={__name:`echartsMap`,setup(i,{expose:a}){return a({frontmatter:{}}),(i,a)=>(e(),t(`div`,r,[...a[0]||=[n(`h1`,{id:`echartsmap`,tabindex:`-1`},`EchartsMap`,-1),n(`p`,null,`该目录来自旧版VIP文档的专属资源分组。`,-1),n(`p`,null,`权限适配完成前，本页不展示受保护正文。`,-1)]]))}};export{i as default};

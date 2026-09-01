@@ -1,0 +1,1 @@
+import{Ct as e,V as t,p as n,y as r}from"./runtime-core.esm-bundler-CXb3iQhv.js";import i from"./init-BSceD0L0.js";var a={class:`markdown-body`},o={__name:`init`,setup(o,{expose:s}){return s({frontmatter:{}}),(o,s)=>(t(),n(`div`,a,[r(e(i),{system:`prime`})]))}};export{o as default};

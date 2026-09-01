@@ -1,0 +1,1 @@
+.map-popover-content{flex-direction:column;gap:5px;display:flex}.map-popover-content .item{align-items:center;gap:5px;line-height:20px;display:flex}.tui-map-global-pin-demo{position:absolute;inset:0;overflow:hidden}.tui-map-global-pin-demo .echarts-map-wrapper{z-index:1;position:absolute;inset:0}.tui-map-global-pin-demo .change-view{bottom:80px;right:20px}

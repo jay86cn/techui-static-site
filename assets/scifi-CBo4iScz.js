@@ -1,1 +1,0 @@
-import{c as s,l as n,g as t}from"./index-CrE7RJmu.js";const r={class:"markdown-body"},p={__name:"scifi",setup(a,{expose:o}){return o({frontmatter:{}}),(c,e)=>(s(),n("div",r,[...e[0]||(e[0]=[t("h1",{id:"tuiscifi",tabindex:"-1"},"TuiScifi",-1),t("p",null,"该目录来自旧版VIP文档的专属资源分组。",-1),t("p",null,"权限适配完成前，本页不展示受保护正文。",-1)])]))}};export{p as default};

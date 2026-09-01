@@ -1,1 +1,0 @@
-import{a1 as e,u as s,c as t,l as a}from"./index-CrE7RJmu.js";const n={class:"test-page"},l={__name:"blank",setup(o){const{proxy:r}=e();return s(),(c,_)=>(t(),a("div",n,"This is a Blank page for Test"))}};export{l as default};

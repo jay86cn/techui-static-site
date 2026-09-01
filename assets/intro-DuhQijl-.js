@@ -1,0 +1,21 @@
+import{V as e,_ as t,p as n,u as r,v as i}from"./runtime-core.esm-bundler-CXb3iQhv.js";var a={class:`markdown-body`},o={__name:`intro`,setup(o,{expose:s}){return s({frontmatter:{}}),(o,s)=>(e(),n(`div`,a,[...s[0]||=[t(`<h1 id="%E5%85%A8%E5%B1%80%E5%87%BD%E6%95%B0%20%E6%A6%82%E8%A7%88" tabindex="-1">全局函数 概览</h1><p>TechUI 将一套强大的工具库与交互触发器挂载到了 Vue 的全局实例上。通过统一的入口 <code>$global</code>，开发者可以在组件的逻辑层（Script）、Hook 函数甚至非组件文件中，直接调用系统级能力或唤起 UI 组件。</p><p>这种设计旨在解耦逻辑与视图，允许您在不编写模板（Template）代码的情况下，通过纯 JavaScript 逻辑驱动界面的交互反馈与系统状态变更。</p><h2 id="%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6" tabindex="-1">核心机制</h2><p>所有的全局函数均通过 Vue 的 <code>app.config.globalProperties</code> 机制挂载。在 Composition API 中，我们统一通过 <code>inject</code> 依赖注入的方式获取这些函数。</p><h3 id="%E5%9F%BA%E7%A1%80%E8%B0%83%E7%94%A8" tabindex="-1">基础调用</h3><p>您无需单独导入每个函数，只需注入 <code>$global</code> 对象，即可解构出所需的方法：</p>`,7),r(`div`,{class:`code-wrapper`,"data-lang":`javascript`},[r(`button`,{class:`tui-icon ti-copy`,title:`Copy Code`,onclick:`copyCode(this)`},[r(`span`,{class:`lang-name`},`javascript`)]),r(`pre`,{class:`language-javascript`},[r(`code`,{class:`language-javascript`},[r(`span`,{class:`token keyword`},`import`),i(),r(`span`,{class:`token punctuation`},`{`),i(` inject `),r(`span`,{class:`token punctuation`},`}`),i(),r(`span`,{class:`token keyword`},`from`),i(),r(`span`,{class:`token string`},`'vue'`),r(`span`,{class:`token punctuation`},`;`),i(`
+
+`),r(`span`,{class:`token comment`},`// 在 setup 中注入`),i(`
+`),r(`span`,{class:`token keyword`},`const`),i(),r(`span`,{class:`token punctuation`},`{`),i(` 
+  `),r(`span`,{class:`token comment`},`// 组件函数示例`),i(`
+  $tMessage`),r(`span`,{class:`token punctuation`},`,`),i(` 
+  $tLoading`),r(`span`,{class:`token punctuation`},`,`),i(`
+  `),r(`span`,{class:`token comment`},`// 功能函数示例`),i(`
+  themeToggle`),r(`span`,{class:`token punctuation`},`,`),i(`
+  openEnc
+`),r(`span`,{class:`token punctuation`},`}`),i(),r(`span`,{class:`token operator`},`=`),i(),r(`span`,{class:`token function`},`inject`),r(`span`,{class:`token punctuation`},`(`),r(`span`,{class:`token string`},`"$global"`),r(`span`,{class:`token punctuation`},`)`),r(`span`,{class:`token punctuation`},`;`),i(`
+
+`),r(`span`,{class:`token keyword`},`const`),i(),r(`span`,{class:`token function-variable function`},`handleAction`),i(),r(`span`,{class:`token operator`},`=`),i(),r(`span`,{class:`token punctuation`},`(`),r(`span`,{class:`token punctuation`},`)`),i(),r(`span`,{class:`token operator`},`=>`),i(),r(`span`,{class:`token punctuation`},`{`),i(`
+  `),r(`span`,{class:`token comment`},`// 直接调用，无需在 template 中预埋组件`),i(`
+  `),r(`span`,{class:`token function`},`$tLoading`),r(`span`,{class:`token punctuation`},`(`),r(`span`,{class:`token string`},`'System initializing...'`),r(`span`,{class:`token punctuation`},`)`),r(`span`,{class:`token punctuation`},`;`),i(`
+  
+  `),r(`span`,{class:`token comment`},`// 执行系统级逻辑`),i(`
+  `),r(`span`,{class:`token function`},`themeToggle`),r(`span`,{class:`token punctuation`},`(`),r(`span`,{class:`token string`},`'darkBlue'`),r(`span`,{class:`token punctuation`},`)`),r(`span`,{class:`token punctuation`},`;`),i(`
+`),r(`span`,{class:`token punctuation`},`}`),r(`span`,{class:`token punctuation`},`;`),i(`
+
+`)])])],-1),t(`<h2 id="%E5%87%BD%E6%95%B0%E5%88%86%E7%B1%BB" tabindex="-1">函数分类</h2><p>为了便于管理与查找，我们将全局函数划分为两大类别：</p><h3 id="%E7%BB%84%E4%BB%B6%E5%87%BD%E6%95%B0%20(component%20functions)" tabindex="-1">组件函数 (Component Functions)</h3><p><strong>“用 JS 渲染 UI”</strong></p><p>此类函数主要用于<strong>程序化地唤起交互组件</strong>。 在传统的开发模式中，使用弹窗或提示通常需要在模板中放置 <code>&lt;TuiDialog&gt;</code> 或 <code>&lt;TuiMessage&gt;</code> 标签，并通过 <code>v-model</code> 控制其显示。而组件函数允许您直接通过函数调用创建实例，它们会自动挂载到 <code>body</code> 或指定节点，并在结束后自动销毁。</p><ul><li><strong>适用场景</strong>：全局消息通知、全屏加载遮罩、动态气泡浮层、强视觉警报等。</li><li><strong>特点</strong>：无需改变 DOM 结构，即用即走。</li></ul><h3 id="%E5%8A%9F%E8%83%BD%E5%87%BD%E6%95%B0%20(functional%20utilities)" tabindex="-1">功能函数 (Functional Utilities)</h3><p><strong>“系统底层能力的快捷入口”</strong></p><p>此类函数是 TechUI 提供的<strong>纯逻辑工具集</strong>。 它们封装了复杂的底层逻辑（如 WASM 加密、主题计算、路由查询解析等），提供了一套简单直观的 API。通过全局注入，确保了在整个应用生命周期中，工具方法的版本与配置始终保持一致。</p><ul><li><strong>适用场景</strong>：主题切换、国际化文本获取、数据加密存储、路由参数操作、系统特性检测等。</li><li><strong>特点</strong>：纯逻辑执行，通常不涉及 UI 渲染（除路由过渡外）。</li></ul>`,10)]]))}};export{o as default};

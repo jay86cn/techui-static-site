@@ -1,1 +1,0 @@
-import t from"./viewer-BncmBkLs.js";import{r as c,c as n,l as s,j as e}from"./index-CrE7RJmu.js";const a={class:"techUIIcon-layout"},p={__name:"index",setup(r){return(_,m)=>{const o=c("TuiThemeToggle");return n(),s("div",a,[e(o),e(t)])}}};export{p as default};

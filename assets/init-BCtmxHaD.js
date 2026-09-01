@@ -1,1 +1,0 @@
-import e from"./init-E11Cz-Vi.js";import{c as o,l as s,j as r,k as a}from"./index-CrE7RJmu.js";const c={class:"markdown-body"},d={__name:"init",setup(n,{expose:t}){return t({frontmatter:{}}),(_,i)=>(o(),s("div",c,[r(a(e),{system:"scifi"})]))}};export{d as default};

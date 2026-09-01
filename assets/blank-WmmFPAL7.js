@@ -1,0 +1,1 @@
+import{S as e,V as t,ht as n,p as r}from"./runtime-core.esm-bundler-CXb3iQhv.js";import{a as i}from"./vue-router-CVQZ_XmL.js";var a={class:`test-page`},o={__name:`blank`,setup(o){let{proxy:s}=e();return i(),n(``),(e,n)=>(t(),r(`div`,a,`This is a Blank page for Test`))}};export{o as default};

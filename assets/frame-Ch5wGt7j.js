@@ -1,1 +1,0 @@
-import r from"./index-CbwcpHjj.js";import{e as o,c as e}from"./index-CrE7RJmu.js";import"./demo-document-CwrHPFnB.js";import"./modernPlugin-Bd_d-ozi.js";import"./isometricViewerFixture-CX6j5ilN.js";import"./iso8Acceptance-BDNqbJuG.js";import"./Controls-D47YLxXG.js";const l={__name:"frame",setup(t){return(m,p)=>(e(),o(r,{"frame-preview":""}))}};export{l as default};

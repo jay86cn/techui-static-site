@@ -1,0 +1,1 @@
+import{K as e,V as t,p as n,y as r}from"./runtime-core.esm-bundler-CXb3iQhv.js";import i from"./viewer-BxiovhQ1.js";var a={class:`techUIIcon-layout`},o={__name:`index`,setup(o){return(o,s)=>{let c=e(`TuiThemeToggle`);return t(),n(`div`,a,[r(c),r(i)])}}};export{o as default};
