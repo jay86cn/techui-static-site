@@ -1,1 +1,0 @@
-import{V as e,d as t}from"./runtime-core.esm-bundler-CXb3iQhv.js";import n from"./flowEditor-4Fdw2_8o.js";var r={__name:`frame`,setup(r){return(r,i)=>(e(),t(n,{"frame-preview":``}))}};export{r as default};
