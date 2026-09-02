@@ -1,0 +1,1 @@
+import{K as e,V as t,d as n}from"./runtime-core.esm-bundler-CXb3iQhv.js";import{x as r}from"./index-CkJV_PUP.js";var i={};function a(r,i){let a=e(`TuiCrosshair`);return t(),n(a)}var o=r(i,[[`render`,a]]);export{o as default};

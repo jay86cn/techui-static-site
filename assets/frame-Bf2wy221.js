@@ -1,1 +1,0 @@
-import{V as e,d as t}from"./runtime-core.esm-bundler-CXb3iQhv.js";import n from"./isoFlow-CB2EY_eD.js";var r={__name:`frame`,setup(r){return(r,i)=>(e(),t(n,{"frame-preview":``}))}};export{r as default};

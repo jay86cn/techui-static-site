@@ -1,0 +1,1 @@
+import{V as e,p as t}from"./runtime-core.esm-bundler-CXb3iQhv.js";import{x as n}from"./index-CkJV_PUP.js";var r={},i={class:``};function a(n,r){return e(),t(`div`,i,`404 page`)}var o=n(r,[[`render`,a]]);export{o as default};
