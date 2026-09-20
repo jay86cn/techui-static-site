@@ -1,0 +1,1 @@
+import{t as e}from"./docs-4ZBSimjX.js";export default e();
